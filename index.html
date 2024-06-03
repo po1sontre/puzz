@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<div class="maintitle">
+    <h1>WELCOME CAFE HUB MEMBERS</h1>
+</div>
+<div class="mainpara">
+    <h3>
+        congrats on reaching this far im impressed now one
+        <br>
+        last step whats the password?
+    </h3>
+    <form id="password-form">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter Password">
+        <button type="submit">Submit</button>
+        <p id="hidden-text" style="display: none;">YOU WON also saiko is a femboy send the word "alpha" in dms</p>
+        <p id="error-message" style="display: none; color: red;"></p>
+      </form>
+      <script>
+     const form = document.getElementById("password-form");
+  const passwordInput = document.getElementById("password");
+  const hiddenText = document.getElementById("hidden-text");
+  const errorMessage = document.getElementById("error-message");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+    const enteredPassword = passwordInput.value;
+
+    if (enteredPassword === "cafehub") { // Replace with your actual password
+      hiddenText.style.display = "block";
+      errorMessage.style.display = "none";
+      passwordInput.placeholder = ""; // Clear placeholder on success
+    } else {
+      hiddenText.style.display = "none";
+      passwordInput.placeholder = "Password Incorrect!"; // Update placeholder with error
+      passwordInput.value = ""; // Clear the password field after wrong input
+      passwordInput.style.borderColor = "red"; // Add red border for visual cue
+    }
+  });
+      </script>
+</body>
+</html>

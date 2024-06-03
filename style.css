@@ -1,0 +1,36 @@
+.maintitle {
+    text-align: center;
+    color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainpara {
+    text-align: center;
+    color: rgb(156, 46, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    size: 20px;
+}
+
+.passf {
+    text-align: center;
+    padding: 8px;
+}
+.submitbut {
+    text-align: center;
+    size: 30px;
+}
+body{
+    background-image: url(1330260.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(90%);
+}
+#hidden-text {
+    font-weight: bold;
+    /* Add other styles for the revealed text */
+  }
+  
+  #error-message {
+    font-size: smaller;
+  }
