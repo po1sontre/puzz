@@ -32,18 +32,18 @@
   const errorMessage = document.getElementById("error-message");
 
   form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
     const enteredPassword = passwordInput.value;
 
-    if (enteredPassword === "cafehub") { // Replace with your actual password
+    if (enteredPassword === "cafehub") { 
       hiddenText.style.display = "block";
       errorMessage.style.display = "none";
-      passwordInput.placeholder = ""; // Clear placeholder on success
+      passwordInput.placeholder = ""; 
     } else {
       hiddenText.style.display = "none";
-      passwordInput.placeholder = "Password Incorrect!"; // Update placeholder with error
-      passwordInput.value = ""; // Clear the password field after wrong input
-      passwordInput.style.borderColor = "red"; // Add red border for visual cue
+      passwordInput.placeholder = "Password Incorrect!"; 
+      passwordInput.value = ""; 
+      passwordInput.style.borderColor = "red"; 
     }
   });
       </script>
